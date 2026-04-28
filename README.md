@@ -1,19 +1,37 @@
 # studio
 
-Etok Studio — 3D business card rendered with Three.js on Zo Space.
+A 3D business card rendered with Three.js on Zo Space — a textured paper card that tilts and bobs in response to mouse movement, with bloom, chromatic aberration, and vignette post-processing.
 
-**Live:** https://etok.zo.space/studio
+**Live:** [https://etok.zo.space/studio](https://etok.zo.space/studio)
 
-## What it is
+## Route
 
-A pointer-reactive 3D business card featuring:
-- Three.js with PBR card mesh and shadow
-- Post-processing: bloom, chromatic aberration, vignette
-- Canvas texture with tracked "ETOK STUDIO" and spaced "ETHAN DAVIDSON" lettering
-- Lift and tilt driven by pointer position
+| Path | Type | Description |
+|------|------|-------------|
+| `/studio` | page | Interactive 3D business card |
+
+## How It Works
+
+- **Paper texture:** Generated entirely on a `<canvas>` — linen gradient, micro-fiber noise, copperplate lettering ("ETHAN DAVIDSON", "WEB SYSTEMS · AI INTERFACES", links)
+- **3D card:** Three.js `ExtrudeGeometry` with a rounded-rectangle `Shape`, physical material with the canvas as `map` and `bumpMap`
+- **Lighting:** Key spotlight (warm), fill point light (cool), rim light, ambient
+- **Post-processing:** `EffectComposer` with `BloomEffect`, `ChromaticAberrationEffect`, and `VignetteEffect`
+- **Mouse parallax:** Card rotation/position driven by normalized pointer position with spring easing
+- **Idle animation:** Sinusoidal bob and light oscillation when pointer is idle
 
 ## Tech
 
-- Three.js 0.179.1 via esm.sh (no npm install needed)
-- EffectComposer with three pass stages
-- Antialiased WebGL renderer with SRGBColorSpace
+- **Three.js:** Loaded via `esm.sh` CDN (v0.160.1) — no local install needed
+- **Post-processing:** `postprocessing@6.35.3` via esm.sh
+- **Styling:** Background is layered CSS gradients simulating paper-in-light environment
+- **No build step:** All imports are CDN dynamic imports inside `useEffect`
+
+## Dependencies
+
+Both loaded from CDN — no npm packages needed:
+- `three@0.160.1`
+- `postprocessing@6.35.3`
+
+## Development
+
+Sync with the `zopack` skill in `code/workspace-root/Skills/zopack/`.
