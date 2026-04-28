@@ -10,6 +10,11 @@ A 3D business card rendered with Three.js on Zo Space — a textured paper card 
 |------|------|-------------|
 | `/studio` | page | Interactive 3D business card |
 
+## References
+
+- [American Psycho Titles & Business Cards — Fonts In Use](https://fontsinuse.com/uses/49529/american-psycho-titles-and-business-cards)
+- [Building an Interactive 3D Event Badge with React Three Fiber — Vercel Blog](https://vercel.com/blog/building-an-interactive-3d-event-badge-with-react-three-fiber)
+
 ## How It Works
 
 - **Paper texture:** Generated entirely on a `<canvas>` — linen gradient, micro-fiber noise, copperplate lettering ("ETHAN DAVIDSON", "WEB SYSTEMS · AI INTERFACES", links)
