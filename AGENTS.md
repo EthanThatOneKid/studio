@@ -6,11 +6,20 @@ Etok Studio — 3D business card rendered with Three.js on Zo Space. Pointer-rea
 
 ## Routes
 
-- `/studio` — Main page (page route)
+| Path | Type | Description |
+|------|------|-------------|
+| `/studio` | page | Interactive 3D business card |
 
 ## Tech
 
-- Three.js 0.179.1 (ESM via esm.sh)
-- Post-processing: UnrealBloomPass, custom chromatic aberration, VignetteShader
-- Canvas-drawn card texture with tracked/spaced typography
-- Pointer-driven tilt and lift via lerp
+- Three.js 0.160.1 (ESM via esm.sh)
+- postprocessing 6.35.3: UnrealBloomPass, ChromaticAberrationEffect, VignetteEffect
+- Canvas-drawn paper texture with spaced tracking typography
+- Extruded card shape with rounded corners + bevel
+- Pointer-reactive rotation with spring easing
+
+## Sync
+
+- Routes live at: https://github.com/EthanThatOneKid/studio
+- Export from zo.space → `bun export.ts --name studio`
+- Import to zo.space → `bun import.ts` (from repo root)
