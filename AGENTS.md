@@ -4,6 +4,11 @@ Etok Studio — 3D business card rendered with Three.js on Zo Space. Pointer-rea
 
 **Live:** https://etok.zo.space/studio
 
+## Mirror Status
+
+This repo mirrors the live Zo Space Studio route.
+Keep the repo and deployed route synchronized so the repo reflects what users see now.
+
 ## Routes
 
 | Path | Type | Description |

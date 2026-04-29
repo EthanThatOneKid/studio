@@ -4,6 +4,8 @@ A 3D business card rendered with Three.js on Zo Space — a textured paper card 
 
 **Live:** [https://etok.zo.space/studio](https://etok.zo.space/studio)
 
+> **Zo Space mirror repo:** this repository mirrors the live Zo Space route at `https://etok.zo.space/studio`. The committed route code should match the deployed experience.
+
 ## Route
 
 | Path | Type | Description |
