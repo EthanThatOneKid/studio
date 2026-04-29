@@ -2,7 +2,7 @@
 
 A 3D business card rendered with Three.js on Zo Space — a textured paper card that tilts and bobs in response to mouse movement, with bloom, chromatic aberration, and vignette post-processing.
 
-**Live:** [https://etok.zo.space/studio](https://etok.zo.space/studio)
+**Live:** <https://etok.zo.space/business-card>
 
 > **Zo Space mirror repo:** this repository mirrors the live Zo Space route at `https://etok.zo.space/studio`. The committed route code should match the deployed experience.
 
