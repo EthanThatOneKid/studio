@@ -1,19 +1,19 @@
-# studio
+# business-card
 
-Etok Studio — 3D business card rendered with Three.js on Zo Space. Pointer-reactive card with bloom, chromatic aberration, and vignette post-processing.
+Business Card — 3D business card rendered with Three.js on Zo Space. Pointer-reactive card with bloom, chromatic aberration, and vignette post-processing.
 
-**Live:** https://etok.zo.space/studio
+**Live:** https://etok.zo.space/business-card
 
 ## Mirror Status
 
-This repo mirrors the live Zo Space Studio route.
+This repo mirrors the live Zo Space Business Card route.
 Keep the repo and deployed route synchronized so the repo reflects what users see now.
 
 ## Routes
 
 | Path | Type | Description |
 |------|------|-------------|
-| `/studio` | page | Interactive 3D business card |
+| `/business-card` | page | Interactive 3D business card |
 
 ## Tech
 
@@ -25,6 +25,6 @@ Keep the repo and deployed route synchronized so the repo reflects what users se
 
 ## Sync
 
-- Routes live at: https://github.com/EthanThatOneKid/studio
-- Export from zo.space → `bun export.ts --name studio`
+- Routes live at: https://github.com/EthanThatOneKid/business-card
+- Export from zo.space → `bun export.ts --name business-card`
 - Import to zo.space → `bun import.ts` (from repo root)
